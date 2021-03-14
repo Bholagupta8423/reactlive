@@ -1,0 +1,468 @@
+/* This is the style sheet of the webpage where are going to give designing part of the website ;
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Hanalei&family=Karla:ital@1&family=Merriweather:wght@700&display=swap');
+ 
+ *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+
+ }
+
+ body{
+     width: 100%;
+     font-family:   sans-serif;
+ }
+ .navs_container{
+     width: 100%;
+     background: rgb(12, 5, 20);
+     
+ }
+
+ .main_container{
+     width: 100%;
+     height: 100vh;
+ }
+/* giving style to the navbar */
+
+.navbarpro2{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 16px 18px;
+   
+}
+
+.link{
+    display: flex;
+}
+
+.logo{
+    font-family: 'Karla', sans-serif;
+    color: rgb(238, 167, 167);
+}
+
+.menu_link{
+    text-decoration: none;
+    padding: 5px 19px;
+    font-family: 'Merriweather', serif;
+    color: rgb(236, 107, 107);
+    margin: 0px 6px;
+    font-size: 16px;
+    
+    border-radius: 23px;
+    box-shadow: 2px 2px 4px rgb(136, 98, 98);
+  
+}
+
+.active_menu{
+    
+    color: rgb(238, 93, 238);
+    box-shadow: inset 2px 2px 4px rgb(136, 98, 98);
+}
+.menu_icon{ 
+    visibility:  hidden;
+    color: white;
+    padding: 4px 4px;
+    border-radius: 6px ;
+    box-shadow: 2px 2px 4px white;
+    font-size: 1.4rem;
+   
+
+}
+
+/* menu bar completed  */
+
+@media only screen and (max-width : 1000px ) {
+    .menu_link{
+        display: none;
+       
+    }
+    .menu_icon{
+        visibility: visible;
+        margin-left: 40px;
+    }
+
+    .link{
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .menu2_link{
+        display: flex;
+        margin: 12px 8px;
+        text-decoration: none;
+        padding: 5px 19px;
+        font-family: 'Merriweather', serif;
+        color: rgb(236, 107, 107);
+        
+        font-size: 16px;
+    
+        border-radius: 23px;
+        box-shadow: 2px 2px 4px rgb(136, 98, 98);
+    }
+
+    .active_menu{
+        color: rgb(238, 93, 238);
+    box-shadow: inset 2px 2px 4px rgb(136, 98, 98);
+    }
+
+    /* menu bar completed  */
+    
+}
+
+/* Home page designing part started ; */
+
+.homes_containers{
+    width: 85%;
+    margin: auto;
+    margin-top: 55px;
+    
+    
+}
+
+.homes_row{
+    display: flex;
+    
+
+}
+.homes_text{
+    display: flex;
+    justify-content: center;
+   
+    flex-direction: column;
+    padding: 25px;
+}
+
+.homes_col1 ,.homes_col2{
+    
+    flex-basis: 50%;
+    
+}
+
+.homes_img{
+    padding: 15px;
+    width: 100%;
+  animation : up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+    0%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translateY(-15px);
+    }
+}
+
+.homes_text h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(37, 21, 9);
+    margin-left: 15px;
+    line-height: 40px;
+}
+
+.homes_text p{
+    margin: 14px 4px;
+    color: crimson;
+    font-family: 'Merriweather', serif;
+    
+}
+
+.btn{
+    width: 130px;
+    font-size: 16px;
+    padding:7px 0px;
+    margin-left: 20px;
+    margin-top: 22px;
+    background: transparent;
+    border: 1px solid blue;
+    border-radius: 23px;
+    color: blue;
+    transition: 0.4s;
+    outline: none;
+}
+
+.btn:hover{
+    background: rgb(38, 38, 233);
+    color: whitesmoke;
+    border:1px solid blue;
+}
+
+@media only screen and (max-width : 800px) {
+    .homes_row{
+        display: flex;
+        flex-direction: column;
+    }
+    .homes_col{
+        flex-basis: 100%;
+    }
+    .homes_img{
+        padding: 0px;
+        margin: 25px 0px;
+    }
+}
+
+
+/* from here we are going to desing the  services part  */
+
+.service_heading{
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(88, 8, 8);
+    position: relative;
+   padding-bottom: 9px;
+}   
+
+.service_heading:before{
+   content: "";
+   height: 4px ;
+   width: 140px ;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 0px;
+   background: red;
+   border-radius: 23px;
+}
+
+
+.card_container{
+    width:85%;
+    margin: auto;
+    flex-wrap: wrap;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-around;
+    
+} 
+
+.card{
+    flex-basis: 26%;
+    box-shadow: 2px 2px 5px grey;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 33px 35px;
+}
+
+.card_img{
+    width: 100%;
+    height: 240px;
+}
+
+
+.padding{
+    padding:  3px 12px;
+
+}
+
+.card_title{
+    padding: 3px 0px;
+    color: rgb(6, 54, 4);
+    font-size: 23px;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.card_text{
+    color: rgb(83, 73, 73);
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 6px 0px;
+}
+
+.card_btn{
+    border: 1px solid blue;
+    padding: 5px 12px;
+    background: transparent;
+
+    outline: none;
+    margin: 7px 9px;
+    color: blue;
+    border-radius: 4px;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.card_btn:hover{
+    background: blue;
+    color: whitesmoke;
+}
+
+@media only screen and (max-width : 800px) {
+    .card_container{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 60%;
+        margin: 34px auto;
+    }
+}
+
+@media only screen and (max-width : 550px ){
+    .card{
+        width: 96%;
+        margin: 34px auto;
+    }
+}
+
+/* designing the error part of the website */
+
+.error_img{
+    width: 60%;
+    height:300px;
+    margin: auto;
+}
+
+.error{
+    width: 100%;
+    height: 100%;
+}
+.error_btn{
+    width: 130px;
+    font-size: 16px;
+    padding:7px 0px;
+    margin-left: 120px;
+    margin-top: 22px;
+    margin-bottom: 32px;
+    background: transparent;
+    border: 1px solid blue;
+    border-radius: 23px;
+    color: blue;
+    transition: 0.4s;
+    outline: none;
+}
+
+.error_btn:hover{
+    background: rgb(38, 38, 233);
+    color: whitesmoke;
+    border:1px solid blue;
+}
+
+/* Here the designing of  the contact part started  */
+
+.contacts_heading{
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(88, 8, 8);
+    position: relative;
+   padding-bottom: 9px;
+}   
+
+.contacts_heading:before{
+   content: "";
+   height: 4px ;
+   width: 120px ;
+   position: absolute;
+   left: 50%;
+   transform: translateX(-50%);
+   bottom: 0px;
+   background: red;
+   border-radius: 23px;
+}
+
+.contacts_container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+form{
+    
+   
+    border-radius: 7px;
+    margin-bottom: 34px;
+}
+
+.contacts_row{
+    margin: 12px 28px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts_row label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.contacts_row input, .contacts_row textarea{
+    width: 400px;
+    padding: 4px 12px;
+    border: 2px solid rgb(182, 161, 161);
+    border-radius: 5px;
+    color: blue;
+    outline: none;
+    font-size: 19px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.submit_btn{
+    
+        border: 1px solid blue;
+        padding: 5px 12px;
+        background: transparent;
+
+        outline: none;
+        margin: 16px 0px;
+        margin-left: 34px;
+        color: blue;
+        border-radius: 4px;
+        font-size: 15px;
+        transition: 0.4s;
+    }
+    
+    .submit_btn:hover{
+        background: blue;
+        color: whitesmoke;
+    } 
+
+@media only screen and (max-width : 550px){
+    .contacts_row input , .contacts_row textarea{
+        width: 90%;
+        margin: auto;
+    }
+    form{
+        width: 90%;
+        margin: auto;
+        margin-bottom: 34px;
+    }
+
+    .contacts_row label{
+        font-family: 13px;
+    }
+}
+
+/* Designing the footer part of the website */
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(157, 184, 233);
+    width: 100%;
+    text-align: center;
+    padding: 12px 23px ;
+    
+
+}
+
+footer p{
+    color:rgb(255, 0, 0);
+   
+}
+
+@media only screen and (max-width : 1000px) {
+    footer p{
+        font-size: 12px;
+    }
+    footer {
+        padding: 6px 23px;
+    }
+}

@@ -1,0 +1,120 @@
+/* This is css part of the web design ; */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     
+ }
+
+
+.design1{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: url("./images/stone.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: 'Ubuntu Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.design1_container{
+    font-family: 'Ubuntu Mono', monospace;
+    width: 300px;
+    min-height: 75vh;
+    height: 100%;
+    margin: auto;
+   
+    margin: auto;
+    background: black;
+    color: white;
+    position: relative;
+}
+
+.design1_person_icon{
+   position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translate(-50%, -50%);
+    padding: 16px;
+    background: rgb(255, 19, 19);
+    color:rgb(255, 255, 255);
+    border-radius: 50%;
+    
+}
+
+.design1_container h2{
+    text-align: center;
+    margin-top: 44px;
+    font-size: 23px;
+    padding: 5px 0px;
+}
+
+.design1_login{
+    padding: 5px 12px;
+    margin: 5px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.design1_login label{
+    padding: 5px 0px;
+
+}
+
+.design1_login input{
+    font-size: 17px;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 8px 0px;
+    width: 90%;
+    border-radius: 0px;
+    margin-bottom: 8px;
+    border-bottom: 2px solid grey
+    ;
+    color: rgb(194, 203, 255);
+}
+
+.design1_login_btn{
+
+    padding: 8px 0px;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    border-radius: 23px;
+    margin: 22px auto;
+    color: white;
+    background: red;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: 0.3s;
+    
+}
+
+.design1_login_btn:hover{
+    background: yellow;
+    color: red;
+}
+
+.design1_account{
+    margin: 12px 3px;
+    
+}
+
+.design1_account h5{
+    color: rgb(143, 143, 255);
+    padding: 6px 3px;
+    width: 160px;
+}
+
+.design1_account h5:hover{
+    
+    border-bottom: 2px solid blue;
+}

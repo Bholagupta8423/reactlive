@@ -1,0 +1,109 @@
+*{
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clock_container{
+    
+    background: rgb(7, 7, 32);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.clock_small_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 65px;
+   
+}
+
+.clock_small_container h1{
+    color: rgb(164, 177, 235);
+   letter-spacing: 0.2em;
+}
+.time{
+    display: flex;
+    justify-content: center;
+    align-items: center; margin: 55px 0px;
+    width: 100%;
+
+}
+.times{
+ flex-basis: 33%;
+}
+
+.time_hr , .time_mn , .time_sc{
+   width: 100%;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.time_hr , .time_sc{
+    background: blue;
+}
+.time_mn{
+    background: rgb(246, 33, 33);
+}
+
+.time_hr h1, .time_mn h1, .time_sc h1{
+    font-size: 6rem;
+    padding: 15px 0px;
+    padding-left: 15px;
+    text-align: center;
+    
+    
+}
+.time_hr p , .time_mn p , .time_sc p{
+   box-shadow: 2px 2px  2px rgb(13, 13, 58) , -2px -2px 2px rgb(17, 17, 54);
+    width: 100%;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 4px 0px;
+    color: rgb(212, 73, 236);
+}
+
+.time{
+    -webkit-box-reflect: below 1px  linear-gradient(transparent , rgba(0,0,0,0.2)); 
+}
+.time{
+    flex-basis: 33%;
+}
+.time_mn h1{
+    color: rgb(62, 204, 62);
+}
+
+/* adding media query to  the project */
+
+@media only screen and (max-width : 700px){
+    .time{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .times{
+        flex-basis: 33%;
+    }
+
+    .time_hr , .time_mn , .time_sc{
+       
+        width: 100%;
+        border: 3px solid red;
+    }
+
+    .time_hr h1, .time_mn h1, .time_sc h1{
+        font-size: 3rem;
+    }
+}

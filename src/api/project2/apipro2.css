@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.api2{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background: url("./images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.api2_head_container{
+   max-width: 800px;
+   width: 90%;
+   margin: 15px auto;
+  
+    display: flex;
+    justify-content: space-around;
+    align-items: centerf;
+   
+}
+
+.api2_head_container input{
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 5px;
+    width: 40%;
+    color: rgb(255, 245, 255);
+    margin: 12px 0px;
+}
+
+.api2_btn{
+    background: yellow;
+    font-size: 16px;
+    width: 30%;
+    padding: 8px 12px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    transition: 0.3s;
+    margin: 12px 0px;
+}
+
+.api2_btn:hover{
+    background: rgb(255, 102, 0);
+}
+
+.api2_result_container{
+    margin: 5px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.api2_result_location{
+    color: white;
+    display: flex;
+    margin: 12px ;
+}
+
+.api2_result_icon{
+    color: white;
+    padding: 6px  55px ;
+    margin: 5px;
+ background: rgba(255, 246, 246, 0.7);
+  border-radius: 3px;
+    cursor: pointer;
+    
+}
+
+
+
+.api2_result_temp{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.api2_result_temp h2{
+    padding: 12px;
+    color: yellow;
+}
+
+.api2_result_minmax{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    padding: 25px;
+    margin: 12px;
+    backdrop-filter: blur(10px);
+    color: rgb(255, 0, 0);
+    
+}
+
+.api2_result_sky{
+    color:white ;
+    font-size: 22px;
+    text-transform: capitalize;
+}
+
+/* adding media query to the project ; */
+@media only screen and (max-width : 600px){
+    .api2_head_container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .api2_head_container input{
+        width: 70%;
+        
+    }
+
+    .api2_btn{
+        width: 65%;
+    }
+}
+

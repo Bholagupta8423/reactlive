@@ -1,0 +1,1091 @@
+/* This is the designing page of my website and now I am going to design my website ; */
+
+/* Home page designing part started ; */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.home_container{
+    width : 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.home_nav{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0px;
+    z-index: 3;
+    padding: 0px 46px;
+}
+
+.home_container:before{
+    content: "";
+    position: absolute;
+    background: rgba(44, 45, 53, 0.5);
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+
+}
+.home_img{
+    width: 500%;
+    height: 100vh;
+    display: flex;
+    animation-name: slider;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    
+
+}
+.home_img img{
+    width: 20%;
+    height: 100%;
+}
+
+@keyframes slider {
+    0%{
+        transform: translateX(0%);
+    }
+    10%{
+        transform: translateX(0%);
+    }
+    12%{
+        transform: translateX(-20%);
+    }
+    22%{
+        transform: translateX(-20%);
+    }
+    24%{
+        transform: translateX(-40%);
+    }
+    34%{
+        transform: translateX(-40%);
+    }
+    36%{
+        transform: translateX(-60%);
+    }
+    46%{
+        transform: translateX(-60%);
+    }
+    48%{
+        transform: translateX(-80%);
+    }
+    50%{
+        transform: translateX(-80%);
+    }
+    52%{
+        transform: translateX(-60%);
+    }
+    62%{
+        transform: translateX(-60%);
+    }
+    64%{
+        transform: translateX(-40%);
+    }
+    74%{
+        transform: translateX(-40%);
+    }
+    76%{
+        transform: translateX(-20%);
+    }
+    86%{
+        transform: translateX(-20%);
+    }
+    88%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+.home_col{
+    width: 90%;
+    position: absolute;
+    left: 50%;  
+    top: 50%;
+    transform: translate(-50%,-50%);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    z-index: 2;
+    
+}
+
+
+
+.home_col h4{
+    color: rgb(236, 95, 14);
+    padding: 8px 3px;
+    
+}
+
+.home_col h1{
+    padding: 7px 12px;
+    letter-spacing: 0.1em;
+    color: whitesmoke;
+   text-align: center;
+    margin: 12px 0px;
+}
+.home_col span{
+    color: rgb(182, 12, 40);
+}
+
+.home_col p{
+    color: rgb(222, 235, 253);
+    padding: 6px 7px;
+    text-align: center;
+}
+
+.home_btn{
+    color: rgb(216, 205, 205) ;
+    background-color: rgb(47, 91, 149);
+    font-size: 18px;
+    padding: 7px 12px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    margin: 16px;
+    transition: 0.4s;
+    text-decoration: none;
+
+}
+.home_btn:hover{
+    background: blue;
+    color: white;
+
+}
+
+
+
+/*  adding media queries to the home section  */
+
+@media only screen and (max-width : 900px) {
+    .home_col h1{
+       
+        margin: 4px 0px;
+    }
+}
+
+
+.btns{
+    text-align: center;
+    color: rgb(209, 108, 108);
+   width: 180px;
+   background:rgb(31, 30, 30) ;
+   font-size: 18px;
+   padding: 9px 15px;
+   border: none;
+   outline: none;
+   border-radius: 23px;
+   box-shadow: 2px 2px  rgb(19, 14, 17) ,
+    -2px -2px  rgb(29, 22, 26)
+   ;
+   background: rgb(34, 26, 31);
+   margin: 25px 12px;
+   text-decoration: none;
+}
+
+.btns:hover{
+    box-shadow:inset  2px 2px  rgb(19, 14, 17) ,
+    inset -2px -2px  rgb(29, 22, 26)
+   ;
+   background: rgb(34, 26, 31);
+}
+
+
+/* Here the styling of the navbar started */
+
+.nav_container{
+    width: 100%;
+    margin: auto;
+    
+}
+
+
+.navs{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 22px;
+    z-index: 16;
+    align-items: center;
+    
+   
+}
+
+.title{
+    border: 2px solid rgb(218, 81, 104);
+    padding: 4px 12px;
+    border-radius: 50%;
+    color: rgb(218, 81, 104);
+   
+}
+
+.menu_logo{
+    color: white;
+    
+    padding: 3px ;
+    border-radius: 5px;
+    border: 1px solid
+    white;
+    transition: 0.4s;
+  
+    cursor: pointer;
+    z-index: 16;
+   
+}
+
+.menu_logo:hover{
+    color: blue;
+    background: white;
+}
+
+
+
+/* designing the sidemenu bar which will slide */
+
+.sidemenu{
+    position: absolute;
+    right: -260px;
+    width: 260px;
+    height: 80vh;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(26, 20, 21);
+    height: 100vh;
+    transition: 0.4s;
+    z-index: 5;
+}
+.sidemenu2{
+    position: absolute;
+    right: 0px;
+    width: 260px;
+    height: 80vh;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(26, 20, 21);
+    height: 100vh;
+    transition: 0.4s;
+    z-index: 5;
+}
+
+
+
+.navlink{
+    color: rgb(209, 108, 108);
+    width: 180px;
+    background:rgb(31, 30, 30) ;
+    font-size: 18px;
+    padding: 9px 12px;
+    border: none;
+    outline: none;
+    border-radius: 23px;
+    box-shadow: 3px 3px  rgb(19, 14, 17) ,
+     -3px -3px  rgb(29, 22, 26)
+    ;
+    background: rgb(34, 26, 31);
+   margin: 12px;
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.active_class{
+    box-shadow:inset  3px 3px  rgb(19, 14, 17) ,
+    inset -3px -3px  rgb(29, 22, 26)
+   ;
+   background: rgb(34, 26, 31);
+}
+
+
+/* The designing of  the about section started here */
+
+.about_container{
+    height: 100%;
+    width: 100%;
+    background: rgb(26, 26, 27);
+    
+}
+
+.about_small_container{
+    width: 86%;
+    margin: auto;
+
+}
+
+.aboutnav_style{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    padding: 22px 12px;
+    z-index: 17;
+}
+
+.aboutnav_style h2{
+    border: 2px solid rgb(218, 81, 104);
+    padding: 4px 12px;
+    border-radius: 50%;
+    color: rgb(218, 81, 104);
+
+}
+
+.about_heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about_heading h4{
+    color: rgb(218, 81, 104);
+    padding: 5px 12px;
+}
+.about_heading h2{
+    color: whitesmoke;
+    letter-spacing: 0.1em;
+    padding: 5px ;
+}
+.about_info{
+    display: flex;
+    width: 100%;
+    margin-top: 55px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+
+}
+
+.about_col{
+    flex-basis: 35%;
+    padding: 5px 55px;
+    margin-bottom: 24px;
+    
+}
+
+.about_col img{
+    width: 100%;
+    height: 70%;
+    padding: 15px;
+    
+    
+    overflow: hidden;
+    box-shadow: inset  7px 7px 2px rgb(19, 17, 17) , inset -7px -7px 2px rgb(19, 17, 17);
+    border-radius: 8px;
+}
+
+.about_col_text{
+    flex-basis: 60%;
+    padding: 21px;
+}
+
+.about_col_text p{
+    color: rgb(165, 181, 248);
+    font-size: 17px;
+    padding: 4px 3px;
+    padding-bottom: 15px;
+}
+.about_btn{
+    display:flex;
+    justify-content: cente;
+    align-items: center;
+}
+
+.about_btn .btn{
+    text-align: center;
+}
+
+@media only screen and (max-width : 1000px ){
+    .about_info{
+       flex-direction: column;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .about_btn{
+        flex-direction: column;
+    }
+}
+
+
+.social_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 6px;
+}
+
+.social_logo{
+    padding: 4px;
+   margin: 3px 7px;
+   color: rgb(198, 185, 240);
+   box-shadow: inset  7px 7px 2px rgb(41, 50, 97) , inset -7px -7px 2px  rgb(41, 50, 97);
+   border-radius: 8px;
+   transition: 0.4s;
+}
+
+.social_logo:hover{
+    box-shadow:   3px 3px 2px rgb(41, 50, 97) ,  -3px -3px 2px  rgb(41, 50, 97);
+}
+
+/* Now the designing of the skill section started ; */
+
+.skill_container{
+    width: 100%;
+    margin: 12px 0px;
+}
+
+.skill_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.skill_title_btn{
+    color: rgb(209, 108, 108);
+   
+   background:rgb(31, 30, 30) ;
+   font-size: 18px;
+   width: 140px;
+   padding: 9px 25px;
+   border: none;
+   outline: none;
+   border-radius: 23px;
+   box-shadow: 2px 2px  rgb(19, 14, 17) ,
+    -2px -2px  rgb(29, 22, 26)
+   ;
+   background: rgb(34, 26, 31);
+   margin: 25px 12px;
+   text-decoration: none;
+}
+
+.skill_title_btn:hover{
+    box-shadow:inset  2px 2px  rgb(19, 14, 17) ,
+    inset -2px -2px  rgb(29, 22, 26)
+   ;
+   background: rgb(34, 26, 31);
+}
+
+.skill_design{
+    width: 95%;
+    
+    display: flex;
+    margin: 12px auto;
+    padding: 25px 6px;
+    
+    margin-bottom: 22px;
+
+}
+
+.skill_col{
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skill_tech{
+    padding: 8px 4px;
+}
+
+.skill_tech div{
+    width: 300px;
+    height: 12px;
+    background: rgb(181, 190, 241);
+    border-radius: 9px;
+
+}
+
+.skill_col h2{
+    color: violet;
+    padding: 23px 4px;
+}
+
+.skill_tech h3{
+    padding: 8px 6px;
+    color: rgb(170, 236, 167);
+}
+
+.skill_tech h3 span{
+    color : rgb(69, 136, 245);
+}
+
+.skill_html .html{
+    background: linear-gradient( to right ,  green 60%,  rgb(181, 190, 241) 40%);
+}
+.skill_css .css{
+    background: linear-gradient( to right ,  green 70%,  rgb(181, 190, 241) 30%);
+}
+.skill_javascript .javascript{
+    background: linear-gradient( to right ,  green 75%,  rgb(181, 190, 241) 25%);
+}
+.skill_node .node{
+    background: linear-gradient( to right ,  green 50%,  rgb(181, 190, 241) 50%);
+}
+.skill_express .express{
+    background: linear-gradient( to right ,  green 45%,  rgb(181, 190, 241) 55%);
+}
+.skill_mongo  .mongo{
+    background: linear-gradient( to right ,  green 55%,  rgb(181, 190, 241) 45%);
+}
+.skill_mongoose  .mongoose{
+    background: linear-gradient( to right ,  green 40%,  rgb(181, 190, 241) 60%);
+}
+.skill_react  .react{
+    background: linear-gradient( to right ,  green 80%,  rgb(181, 190, 241) 20%);
+}
+
+.knowledge{
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 3px 3px 6px rgb(146, 146, 219),
+    -3px -3px 6px rgb(143, 143, 245);
+   
+}
+.knowledge_inbox{
+    width: 200%;
+    display: flex;
+    transition: 0.4s;
+   
+
+}
+.knowledge_inbox2{
+    width: 200%;
+    display: flex;
+   transform: translateX(-50%);
+   transition: 0.4s;
+
+}
+/* giving animation to the skills and the education section  */
+
+
+
+/* giviing media queries to the skill part  */
+
+@media only screen and (max-width : 900px) {
+    .skill_design{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width : 500px ) {
+    .skill_tech div{
+        width: 240px;
+    }
+}
+
+
+/* from here the designing of the education part started ; */
+
+
+.education_container{
+    width: 95%;
+    margin: 29px auto;
+    display: flex;
+   
+}
+
+.education_col{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    
+}
+
+.education_card{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 33px;
+    padding: 22px;
+    box-shadow:  3px 3px 4px  rgb(18, 19, 20) ,
+     -3px -3px 4px rgb(18, 19, 20);
+     border-radius: 8px;
+
+}
+
+.education_card h4{
+    color: rgb(246, 112, 88);
+    padding: 4px 5px;
+}
+
+.education_card h3{
+    color: rgb(145, 248, 141);
+    padding: 4px 3px;
+}
+
+.education_card p{
+    color: rgb(132, 165, 207);
+    font-size: 18px;
+    text-align: right;
+    padding: 6px 3px;
+    letter-spacing: 0.04em;
+}
+
+/* giving media queries to the education part  */
+
+@media only screen and (max-width : 1000px) {
+
+    .education_container{
+        flex-direction: column;
+    }
+}
+
+
+
+/*  Designing of the contact part started */
+
+.contact_container{
+    height: 100%;
+    width: 100%;
+    background: rgb(26, 26, 27);
+    overflow: hidden;
+    
+}
+.contact_small_container{
+    width: 90%;
+    margin: auto;
+   
+}
+.contactnav{
+    width: 100%;
+}
+
+.contact_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px;
+}
+
+.contact_title h4{
+    color: rgb(224, 89, 107);
+    padding: 6px ;
+}
+
+.contact_title h2{
+    color: rgb(161, 198, 228);
+    padding: 7px;
+}
+
+.contact_details{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 22px 3px;
+    
+}
+
+.contact_card{
+    flex-basis: 25%;
+    box-shadow: 3px 3px 2px rgb(47, 40, 40),-3px -3px 2px rgb(47, 40, 40);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    margin: 23px ;
+
+}
+
+.contact_card .contact_icon{
+    color: rgb(97, 228, 58);
+   margin: 5px;
+}
+.contact_card h4{
+    color: rgb(180, 208, 255);
+    padding: 6px;
+}
+.contact_card p{
+    color: lightpink;
+    padding: 7px;
+}
+
+.contact_form{
+    display: flex;
+    width: 100%;
+    margin: 23px 5px;
+}
+
+.contact_form form{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+   
+}
+.form_col , .form_col2{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.form_col input{
+    width: 90%;
+    margin: 12px auto;
+    font-size: 17px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 2px rgb(47, 40, 40),-3px -3px 2px rgb(47, 40, 40);
+    background: transparent;
+    color: turquoise;
+    letter-spacing: 0.1em;
+}
+
+.form_col2 textarea{
+    margin: 12px auto;
+    font-size: 17px;
+    width: 95%;
+    padding: 9px 12px;
+    border: none;
+    outline: none;
+    box-shadow: 3px 3px 2px rgb(47, 40, 40),-3px -3px 2px rgb(47, 40, 40);
+    background: transparent;
+    color: turquoise;
+    border-radius: 8px;
+    letter-spacing: 0.1em;
+}
+
+
+.form_col2 button{
+    color: rgb(209, 108, 108);
+   
+   background:rgb(31, 30, 30) ;
+   font-size: 18px;
+   width: 170px;
+   padding: 9px 6px;
+   border: none;
+   outline: none;
+   border-radius: 23px;
+   box-shadow: 2px 2px  rgb(19, 14, 17) ,
+    -2px -2px  rgb(29, 22, 26)
+   ;
+   background: rgb(34, 26, 31);
+   margin: 23px 12px;
+   text-decoration: none;
+}
+form{
+    box-shadow: 3px solid red;
+}
+
+.form_col2 button:hover{
+    box-shadow:inset  2px 2px  rgb(19, 14, 17) ,
+    inset -2px -2px  rgb(29, 22, 26)
+   ;
+   background: rgb(34, 26, 31);
+}
+
+/* adding media queries to the contact section ;*/
+
+@media only screen and (max-width : 1000px){
+    .contact_form form{
+        flex-direction: column;
+    }
+
+    .contact_details{
+        flex-direction: column;
+    }
+}
+
+/* Now the designing of the services part started */
+
+.service_container{
+    height: 100%;
+    width: 100%;
+    background: rgb(26, 26, 27);
+    overflow: hidden;
+}
+
+.service_small_container{
+    width: 86%;
+    margin: auto;
+}
+
+.service_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px;
+}
+
+.service_title h4{
+    color: rgb(224, 89, 107);
+    padding: 6px ;
+}
+
+.service_title h2{
+    color: rgb(161, 198, 228);
+    padding: 7px;
+}
+
+.service_row{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 6px;
+}
+
+.service_card{
+    display: flex;
+    justify-content:space-evenly;
+    flex-basis: 27%;
+    align-items: center;
+    padding: 7px 13px;
+    flex-direction: column;
+    margin: 23px 23px;
+    box-shadow: 3px 3px 2px rgb(16, 18, 24), -3px -3px 2px rgb(16, 18, 24);
+    border-radius: 8px;
+
+}
+
+.service_card .service_icon{
+    color: rgb(246, 106, 64);
+    font-size: 2.3rem;
+    margin: 4px ;
+}
+
+.service_card h3{
+    color: rgb(186, 219, 170);
+    padding: 6px 0px;
+}
+
+.service_card p{
+    color: rgb(186, 198, 238);
+    font-size: 17px;
+    padding: 4px ;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+/* adding media queries to the services part ; */
+
+@media only screen and (max-width : 1000px ) {
+    .service_row{
+        flex-direction: column;
+    }
+}
+
+/* Here the designing of  the project part started ; */
+
+
+.project_container{
+    height: 100%;
+    width: 100%;
+    background: rgb(26, 26, 27);
+    overflow: hidden;
+}
+
+.project_small_container{
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    overflow: hidden;
+}
+
+.project_card_design{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project_card{
+    flex-basis: 36%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 25px 34px;
+    border-radius: 9px;
+    overflow:hidden;
+    width: 100%;
+}
+.projectimg{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+ .project_img{ 
+    display: flex;
+    width: 500%;
+    overflow: hidden;
+    animation-name: sliders;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+} 
+
+.project_img img{
+    width: 100%;
+    height: 230px;
+}
+/* giving animation to the project section ; */
+
+@keyframes sliders {
+    0%{
+        transform: translateX(0%);
+    }
+    10%{
+        transform: translateX(0%);
+    }
+    12%{
+        transform: translateX(-20%);
+    }
+    22%{
+        transform: translateX(-20%);
+    }
+    24%{
+        transform: translateX(-40%);
+    }
+    34%{
+        transform: translateX(-40%);
+    }
+    36%{
+        transform: translateX(-60%);
+    }
+    46%{
+        transform: translateX(-60%);
+    }
+    48%{
+        transform: translateX(-80%);
+    }
+    50%{
+        transform: translateX(-80%);
+    }
+    52%{
+        transform: translateX(-60%);
+    }
+    62%{
+        transform: translateX(-60%);
+    }
+    64%{
+        transform: translateX(-40%);
+    }
+    74%{
+        transform: translateX(-40%);
+    }
+    76%{
+        transform: translateX(-20%);
+    }
+    86%{
+        transform: translateX(-20%);
+    }
+    88%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+
+.projectimg:before{
+    content: "";
+    position: absolute;
+    background: rgb(26, 29, 63 , 0.3);
+   z-index: 1;
+   width: 100%;
+   height: 100%;
+
+
+}
+
+.projectimg h2{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: rgb(225, 234, 243);
+    z-index: 2;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+   
+}
+
+.project_text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 23px 25px;
+    background: rgb(219, 236, 246);
+    margin-top: -3px;
+    overflow: hidden;
+}
+.project_text h3{
+    color: rgb(207, 44, 15);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.project_btn{
+    color: blue;
+    text-decoration: none;
+    font-size: 17px;
+    max-width: 170px;
+    margin: 15px;
+    padding: 6px 15px;
+    background: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px  rgb(199, 188, 188) ,
+    -2px -2px 2px rgb(200, 190, 190);
+    transition: 0.4s;
+}
+
+.project_btn:hover{
+    background: blue;
+    color: white;
+}
+
+
+/* adding media query to the project section */
+
+@media only screen and (max-width : 1000px){
+    .project_card_design{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width : 550px ) {
+    .project_text{
+        flex-direction: column;
+    }
+}
